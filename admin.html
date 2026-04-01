@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h2>Admin Panel</h2>
+
+<input type="file" id="img">
+<button onclick="upload()">Upload</button>
+
+<script>
+async function upload(){
+    let form = new FormData();
+    form.append("image", img.files[0]);
+
+    await fetch("/api/photo/upload",{
+        method:"POST",
+        body:form
+    });
+
+    alert("Uploaded");
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery - Yoban Production</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Yoban Production</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="booking.html">Booking</a>
+        <a href="about.html">About Us</a>
+        <a href="login.html">Login</a>
+    </nav>
+</header>
+
+<!-- MAIN VIEW -->
+<section class="viewer">
+
+    <button class="nav prev" onclick="prev()">❮</button>
+
+    <div id="mediaContainer"></div>
+
+    <button class="nav next" onclick="next()">❯</button>
+
+</section>
+
+<!-- CATEGORY SECTION -->
+<section class="categories">
+
+    <div onclick="loadCategory('wedding')">Wedding</div>
+    <div onclick="loadCategory('product')">Product</div>
+    <div onclick="loadCategory('fashion')">Fashion</div>
+    <div onclick="loadCategory('music')">Music Video</div>
+
+</section>
+
+<footer>
+    <a href="https://facebook.com/yobanproduction">Facebook</a>
+    <a href="https://www.instagram.com/yobanproduction_official/">Instagram</a>
+    <a href="https://www.youtube.com/@YobanProduction">YouTube</a>
+</footer>
+
+<script src="js/gallery.js"></script>
+
+</body>
+</html>
